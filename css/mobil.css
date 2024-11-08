@@ -1,0 +1,175 @@
+/* Základní reset a box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Navbar stylování */
+#navbar {
+    display: flex;
+    flex-direction: column; /* Změněno na sloupcové uspořádání */
+    background-color: grey;
+    align-items: center; /* Zarovnání položek na střed */
+}
+
+#navbar .logo {
+    font-weight: bold;
+    font-size: larger;
+    margin: 20px 0; /* Přidání mezery kolem loga */
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0; /* Odstranění defaultního paddingu */
+}
+
+#navbar ul li {
+    margin: 5px 0; /* Snížení mezer mezi položkami */
+}
+
+#navbar ul li a {
+    padding: 12px;
+    margin: 0 4px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Showcase */
+#showcase {
+    background: #333 url("../img/tapeta.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: whitesmoke;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* What section */
+#what .items {
+    display: flex;
+    flex-direction: column; /* Upraveno na sloupcové uspořádání */
+    padding: 1rem;
+}
+
+#what .item {
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+}
+
+#what .items .item i {
+    background: #b0b8c1;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Footer container */
+.footer-container {
+    flex: 1;
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-container p,
+.footer-container a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: black;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+footer i {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Heading styles */
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    color: whitesmoke;
+    background-color: #847979;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #cbb48b;
+}
+
+/* Container styles */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+/* Padding utility classes */
+.py-1 {

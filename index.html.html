@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylformular.css">
+    <link rel="stylesheet"  media="screen and (max-width: 768px)" href="./css/mobil.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)"  href="./css/widescreen.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-sack-dollar"></i> Jacob’s finance
+        </div>
+        <ul>
+            <li><a href="#home">DOMŮ</a> </li>
+            <li><a href="#ceník">CENÍK</a> </li>
+            <li><a href="#poradci">PORADCI</a> </li>
+            <li><a href="#formular">MŮJ ÚČET</a> </li>
+       
+                
+            </div>
+        </ul>
+       
+
+
+    </nav>
+</section>
+
+<!-- Modal pro přihlášení/registraci -->
+<div id="accountModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Přihlášení nebo registrace</h2>
+        <form id="loginForm">
+            <label for="username">Uživatelské jméno:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Heslo:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="btn">Přihlásit se</button>
+        </form>
+        <hr>
+        <p>Nemáte účet? <a href="#" id="registerLink">Registrujte se zde.</a></p>
+    </div>
+</div>
+    <div id="showcase">
+        <div class="showcase-content">
+            <h1 class="1-heading">Jacob’s financial consultancy</h1>
+            <p class="lead btn">Úspěšné poradenství o Vašich financích</p>
+            <a href="" class="btn">Chci být bohatý</a>
+        </div>
+    </div>;
+            <section id="what" class="bg-light py-1">
+                <div class="container">
+                    <h2 class="m-heading text-center">
+                        <span class="text-primary">Naše záruky</span>
+                        
+                    </h2>
+                    <div class="items">
+
+                        <div class="item">
+                            <i class="fa-solid fa-shield"></i>
+                            <h3>Neznáme slovo podvod</h3>
+                            <p>Zaměstnáváme pouze prověřené a důvěryhodné poradce.</p>
+                            <hr>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <h3>Zaručená úspěšnost</h3>
+                            <p>Naše plány výchazí v 99% případů.</p>
+                            <hr>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>Profesiální přístup </h3>
+                            <p>Zajišťujeme, že ke každému našemu zákazníkovi se chováme s respektem a úctou.</p>
+<hr>
+                        </div>
+                    </div>
+                    <!-- https://unsplash.com/photos/person-holding-orange-and-white-plastic-bottle-2OBjpuXHWXY -->
+                    <section id="poradce" class="bg-dark">
+                        <div class="container">
+                            <div class="poradce.img">
+                                <div style="display: flex; align-items: center;">
+                                    <div style="display: flex; align-items: center; background-color: #bfbfbf; color: white; padding: 10px; border-radius: 8px;">
+                                        <img src="../img/poradce.jpg" alt="poradce" style="width: 250px; height: auto; margin-right: 90px; border-radius: 40px;">
+                                        <div class="poradce-text p-1 bg-dark">
+                                            <h2 class="m-heading"><span class="text-primary">Profesiální </span>poradce</h2>
+                                            <hr>
+                                            <ul>
+                                                <h2>Albert West</h2>
+                                                <li>Více než 10 let praxe</li>
+                                                <li>99% spokojených zákazníků</li>
+                                                <li><span class="text-primary"><i class="fa-solid fa-square-phone"></i></span> +420 553 759 170</li>
+                                                <li><span class="text-primary"><i class="fa-solid fa-square-envelope"> </i></span>
+                                                    albert.west@money.cz</li>
+                                                    <h3>„Peníze musíme zasét jako semínka, aby rostly jako  strom.“</h3>
+                                    </div>
+                                            </ul>
+                                        </div>
+                                            
+                            </div>
+                            </div>
+                           
+                        </div>
+                    </section>                     
+                    <footer>
+                        <div class="footer-container">
+                            <h3>KONTAKT</h3>
+                            <p>E-mail: <a href="mailto:info@moeny.cz">info@money.cz</a></p>
+                            <p>Telefon: +420 123 456 789</p>
+                            </div>
+                    
+                        <div class="footer-container">
+                        <h3>Sledujte nás</h3>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </footer>
+    
+                    </body>
+<!-- Skript pro modal -->
+    <script>
+        // Zobrazení modalu
+        const modal = document.getElementById("accountModal");
+        const accountLink = document.querySelector("#navbar ul li a[href='#formular']");
+        const closeModal = document.getElementsByClassName("close")[0];
+
+        accountLink.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        }
+
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</html>
