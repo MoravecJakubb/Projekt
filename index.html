@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./stylformular.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylformular.css">
+    <link rel="stylesheet"  media="screen and (max-width: 768px)" href="./css/mobil.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)"  href="./css/widescreen.css">
     <style>
     </style>
 </head>
@@ -23,11 +25,13 @@
         <ul>
             <li><a href="#home">DOMŮ</a> </li>
             <li><a href="#ceník">CENÍK</a> </li>
-            <li><a href="#contact">KONTAKT</a> </li>
-            <li><a href="#formular">FORMULÁŘ</a> </li>
-
+            <li><a href="#poradci">PORADCI</a> </li>
+            <li><a href="#formular">MŮJ ÚČET</a> </li>
+       
+                
+            </div>
         </ul>
-
+       
 
 
     </nav>
@@ -88,18 +92,28 @@
                     <!-- https://unsplash.com/photos/person-holding-orange-and-white-plastic-bottle-2OBjpuXHWXY -->
                     <section id="poradce" class="bg-dark">
                         <div class="container">
-                            <div class="poradce.img"></div>
-                            <div class="poradce-text p-1 bg-dark">
-                                <h2 class="m-heading"><span class="text-primary">Profesiální </span>poradce</h2>
-                                <ul>
-                                    <h2>Albert West</h2>
-                                    <li>Více než 10 let praxe</li>
-                                    <li>99% spokojených zákazníků</li>
-                                    <li><span class="text-primary"><i class="fa-solid fa-square-phone"></i></span> +420 553 759 170</li>
-                                    <li><span class="text-primary"><i class="fa-solid fa-square-envelope"> </i></span>
-                                        albert.west@money.cz</li>
-                                </ul>
+                            <div class="poradce.img">
+                                <div style="display: flex; align-items: center;">
+                                    <div style="display: flex; align-items: center; background-color: #bfbfbf; color: white; padding: 10px; border-radius: 8px;">
+                                        <img src="../img/poradce.jpg" alt="poradce" style="width: 250px; height: auto; margin-right: 90px; border-radius: 40px;">
+                                        <div class="poradce-text p-1 bg-dark">
+                                            <h2 class="m-heading"><span class="text-primary">Profesiální </span>poradce</h2>
+                                            <hr>
+                                            <ul>
+                                                <h2>Albert West</h2>
+                                                <li>Více než 10 let praxe</li>
+                                                <li>99% spokojených zákazníků</li>
+                                                <li><span class="text-primary"><i class="fa-solid fa-square-phone"></i></span> +420 553 759 170</li>
+                                                <li><span class="text-primary"><i class="fa-solid fa-square-envelope"> </i></span>
+                                                    albert.west@money.cz</li>
+                                                    <h3>„Peníze musíme zasét jako semínka, aby rostly jako  strom.“</h3>
+                                    </div>
+                                            </ul>
+                                        </div>
+                                            
                             </div>
+                            </div>
+                           
                         </div>
                     </section>                     
                     <footer>
